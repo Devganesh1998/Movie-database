@@ -1,0 +1,135 @@
+body {
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.carousel-inner {
+  height: 80vh;
+  width: 98.75vw;
+}
+
+.carousel-item * {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.logo {
+  width: 60px;
+}
+.footer-logo {
+  width: 150px;
+}
+.heading::after {
+  content: "";
+  width: 50px;
+  position: absolute;
+  top: 70px;
+  z-index: 9;
+}
+.search-container {
+  background-image: url(../img/wolverine.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-inline {
+  display: flex;
+  flex-direction: column;
+}
+
+#about {
+  background-color: #121212;
+  color: #ffff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#about h2 {
+  font-size: 4em;
+}
+
+#about p {
+  width: 70vw;
+  font-size: 2em;
+}
+
+.search-box {
+  background: rgba(0, 0, 0, 0.5);
+  border: 5px solid #fff;
+  margin-top: 30vh;
+}
+
+.card {
+  border: 5px solid #fff;
+}
+.card img {
+  width: 100%;
+  height: 325px;
+}
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card:hover .overlay {
+  opacity: 1;
+}
+
+#contactUs {
+  background-color: rgba(12, 12, 12, 0.75);
+  font-size: 1.4em;
+}
+
+#movieContainer {
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#movieList {
+  width: 70vw;
+}
+
+@media (max-width: 600px) {
+  #about h2 {
+    font-size: 2.5em;
+  }
+
+  #about p {
+    font-size: 1.5em;
+  }
+}
